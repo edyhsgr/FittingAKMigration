@@ -4,7 +4,7 @@ EDDIE'S R CODE FOR FITTING THE MODEL MIGRATION SCHEDULE WITH STUDENT PEAK APPLIE
 
 STEPS: Everything is run with the R code in ReadRunWriteByYear.txt
 
-ReadRunWriteByYear.txt just needs its directory paths updated. It relies on:
+It relies on:
 
 (1) the input data - SPMMSData_AKExample.csv
 
@@ -13,7 +13,9 @@ InputParametersOrParameterRanges.txt
 
 (3) the R code for fitting - Fitting.txt
 
-CombinedPlots.pdf is output plots from ReadRunWriteByYear.txt, all combined
+Each of these three items ReadRunWriteByYear.txt relies on is linked through the Internet, so you should be able to simply select-all, copy and paste ReadRunWriteByYear.txt into an R command line to make it work. 
+
+CombinedPlots.pdf and CombinedPlots.gif is output plots from ReadRunWriteByYear.txt, all combined
 
 -----
 
@@ -21,9 +23,9 @@ REFERENCES:
 
 -ORIGINAL CODE WITH NOTES IS AT http://www.demog.berkeley.edu/~eddieh/toolbox.html#SPMMSRCode
 
--FOR INFO ON THE MODEL MIGRATION SCHEDULE WITH STUDENT PEAK, SEE: Wilson, T. (2010). "Model migration schedules incorporating student migration peaks." Demographic Research, 23(8): 191–222. 
+-INFO ON THE MODEL MIGRATION SCHEDULE WITH STUDENT PEAK, SEE: Wilson, T. (2010). "Model migration schedules incorporating student migration peaks." Demographic Research, 23(8): 191–222. 
 AVAILABLE ONLINE: https://www.demographic-research.org/Volumes/Vol23/8/default.htm 
-RELATED EXCEL WORKBOOK BY TOM WILSON: http://www.demog.berkeley.edu/~eddieh/toolbox.html#SPMMS
+RELATED EXCEL WORKBOOK BY TOM WILSON (PROVIDED TERRIFIC INSTRUCTION): http://www.demog.berkeley.edu/~eddieh/toolbox.html#SPMMS
 
 -ON THE ROGERS-CASTRO MODEL: Rogers A & Castro LJ (1981). Model Migration Schedules. IIASA Research Report. IIASA, Laxenburg, Austria: RR-81-030 
 AVAILABLE ONLINE: http://pure.iiasa.ac.at/id/eprint/1543/
