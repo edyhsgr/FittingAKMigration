@@ -13,7 +13,7 @@ InputParametersOrParameterRanges.txt
 
 (3) the R code for fitting - Fitting.txt
 
-Each of these three items ReadRunWriteByYear.txt that relies on is linked through the Internet, so you should be able to simply select-all, copy and paste ReadRunWriteByYear.txt into an R command line to make it work. 
+Each of these three items that ReadRunWriteByYear.txt relies on is linked through the Internet, so you should be able to simply select-all, copy and paste ReadRunWriteByYear.txt into an R command line to make it work. 
 
 CombinedPlots.pdf and CombinedPlots.gif is output plots from ReadRunWriteByYear.txt, all combined
 
