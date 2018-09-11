@@ -5,11 +5,11 @@
 ##REFERENCES:
 ##ORIGINAL CODE AND NOTES ARE AT http://www.demog.berkeley.edu/~eddieh/toolbox.html#SPMMSRCode 
 ##
-##FOR MORE INFO ON THE MODEL MIGRATION SCHEDULE WITH STUDENT PEAK, SEE: Wilson, T. (2010). "Model migration schedules incorporating student migration peaks." Demographic Research, 23(8): 191–222.
+##INFO ON THE MODEL MIGRATION SCHEDULE WITH STUDENT PEAK, SEE: Wilson, T. (2010). "Model migration schedules incorporating student migration peaks." Demographic Research, 23(8): 191â€“222.
 ##AVAILABLE ONLINE: https://www.demographic-research.org/Volumes/Vol23/8/default.htm
-##RELATED EXCEL WORKBOOK BY TOM WILSON: http://www.demog.berkeley.edu/~eddieh/toolbox.html#SPMMS 
+##RELATED EXCEL WORKBOOK BY TOM WILSON (WAS TERRIFIC INSTRUCTION): http://www.demog.berkeley.edu/~eddieh/toolbox.html#SPMMS 
 ##
-##GREAT RESOURCE ON THE ROGERS-CASTRO MODEL: Rogers A & Castro LJ (1981). Model Migration Schedules. IIASA Research Report. IIASA, Laxenburg, Austria: RR-81-030
+##ON THE ROGERS-CASTRO MODEL: Rogers A & Castro LJ (1981). Model Migration Schedules. IIASA Research Report. IIASA, Laxenburg, Austria: RR-81-030
 ##AVAILABLE ONLINE: http://pure.iiasa.ac.at/id/eprint/1543/
 ##############################################################################################################################
 
@@ -17,12 +17,12 @@
 #2011 READ DATA AND RUN, PLOT, WRITE
 ##############################
 ##READ THE DATA IN
-Data<-read.table(file="C:/###/###/SPMMSData_AKExample.csv",header=TRUE,sep=",")
+Data<-read.table(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/SPMMSData_AKExample.csv",header=TRUE,sep=",")
 migprob<-(Data$AK2011[1:90])
 
 ##RUN THE FITTING CODE (PARAMETERS BOUNDS AND INFO ARE IN THE CODE)
-source(file="C:/###/###/InputParametersOrParameterRanges.txt")
-source(file="C:/###/###/Fitting.txt")
+source(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/InputParametersOrParameterRanges.txt")
+source(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/Fitting.txt")
 
 ##PLOT ACCUMULATED FIT
 plot(step1,xlab="Age",ylab="Migration Rate (proportional)",ylim=c(-.005,.025),pch=1)
@@ -52,7 +52,7 @@ squaredsumoffullmodelresiduals
 
 ##WRITE THE DATA
 #write.table(###, file="C:/###/###.csv", sep=",")
-dev.copy2pdf(file="C:/###/###/2011.pdf") 
+#dev.copy2pdf(file="C:/###/###/2011.pdf") 
 
 
 
@@ -60,12 +60,12 @@ dev.copy2pdf(file="C:/###/###/2011.pdf")
 #2012 READ DATA AND RUN, PLOT, WRITE
 ##############################
 ##READ THE DATA IN
-Data<-read.table(file="C:/###/###/SPMMSData_AKExample.csv",header=TRUE,sep=",")
+Data<-read.table(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/SPMMSData_AKExample.csv",header=TRUE,sep=",")
 migprob<-(Data$AK2012[1:90])
 
 ##RUN THE FITTING CODE (PARAMETERS BOUNDS AND INFO ARE IN THE CODE)
-source(file="C:/###/###/InputParametersOrParameterRanges.txt")
-source(file="C:/###/###/Fitting.txt")
+source(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/InputParametersOrParameterRanges.txt")
+source(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/Fitting.txt")
 
 ##PLOT ACCUMULATED FIT
 plot(step1,xlab="Age",ylab="Migration Rate (proportional)",ylim=c(-.005,.025),pch=1)
@@ -95,7 +95,7 @@ squaredsumoffullmodelresiduals
 
 ##WRITE THE DATA
 #write.table(###, file="C:/###/###.csv", sep=",")
-dev.copy2pdf(file="C:/###/###/2012.pdf") 
+#dev.copy2pdf(file="C:/###/###/2012.pdf") 
 
 
 
@@ -103,12 +103,12 @@ dev.copy2pdf(file="C:/###/###/2012.pdf")
 #2013 READ DATA AND RUN, PLOT, WRITE
 ##############################
 ##READ THE DATA IN
-Data<-read.table(file="C:/###/###/SPMMSData_AKExample.csv",header=TRUE,sep=",")
+Data<-read.table(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/SPMMSData_AKExample.csv",header=TRUE,sep=",")
 migprob<-(Data$AK2013[1:90])
 
 ##RUN THE FITTING CODE (PARAMETERS BOUNDS AND INFO ARE IN THE CODE)
-source(file="C:/###/###/InputParametersOrParameterRanges.txt")
-source(file="C:/###/###/Fitting.txt")
+source(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/InputParametersOrParameterRanges.txt")
+source(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/Fitting.txt")
 
 ##PLOT ACCUMULATED FIT
 plot(step1,xlab="Age",ylab="Migration Rate (proportional)",ylim=c(-.005,.025),pch=1)
@@ -138,7 +138,7 @@ squaredsumoffullmodelresiduals
 
 ##WRITE THE DATA
 #write.table(###, file="C:/###/###.csv", sep=",")
-dev.copy2pdf(file="C:/###/###/2013.pdf") 
+#dev.copy2pdf(file="C:/###/###/2013.pdf") 
 
 
 
@@ -146,12 +146,12 @@ dev.copy2pdf(file="C:/###/###/2013.pdf")
 #2014 READ DATA AND RUN, PLOT, WRITE
 ##############################
 ##READ THE DATA IN
-Data<-read.table(file="C:/###/###/SPMMSData_AKExample.csv",header=TRUE,sep=",")
+Data<-read.table(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/SPMMSData_AKExample.csv",header=TRUE,sep=",")
 migprob<-(Data$AK2014[1:90])
 
 ##RUN THE FITTING CODE (PARAMETERS BOUNDS AND INFO ARE IN THE CODE)
-source(file="C:/###/###/InputParametersOrParameterRanges.txt")
-source(file="C:/###/###/Fitting.txt")
+source(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/InputParametersOrParameterRanges.txt")
+source(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/Fitting.txt")
 
 ##PLOT ACCUMULATED FIT
 plot(step1,xlab="Age",ylab="Migration Rate (proportional)",ylim=c(-.005,.025),pch=1)
@@ -181,7 +181,7 @@ squaredsumoffullmodelresiduals
 
 ##WRITE THE DATA
 #write.table(###, file="C:/###/###.csv", sep=",")
-dev.copy2pdf(file="C:/###/###/2014.pdf") 
+#dev.copy2pdf(file="C:/###/###/2014.pdf") 
 
 
 
@@ -189,12 +189,12 @@ dev.copy2pdf(file="C:/###/###/2014.pdf")
 #2015 READ DATA AND RUN, PLOT, WRITE
 ##############################
 ##READ THE DATA IN
-Data<-read.table(file="C:/###/###/SPMMSData_AKExample.csv",header=TRUE,sep=",")
+Data<-read.table(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/SPMMSData_AKExample.csv",header=TRUE,sep=",")
 migprob<-(Data$AK2015[1:90])
 
 ##RUN THE FITTING CODE (PARAMETERS BOUNDS AND INFO ARE IN THE CODE)
-source(file="C:/###/###/InputParametersOrParameterRanges.txt")
-source(file="C:/###/###/Fitting.txt")
+source(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/InputParametersOrParameterRanges.txt")
+source(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/Fitting.txt")
 
 ##PLOT ACCUMULATED FIT
 plot(step1,xlab="Age",ylab="Migration Rate (proportional)",ylim=c(-.005,.025),pch=1)
@@ -224,7 +224,7 @@ squaredsumoffullmodelresiduals
 
 ##WRITE THE DATA
 #write.table(###, file="C:/###/###.csv", sep=",")
-dev.copy2pdf(file="C:/###/###/2015.pdf") 
+#dev.copy2pdf(file="C:/###/###/2015.pdf") 
 
 
 
@@ -232,12 +232,12 @@ dev.copy2pdf(file="C:/###/###/2015.pdf")
 #2011 TO 2015 READ DATA AND RUN, PLOT, WRITE
 ##############################
 ##READ THE DATA IN
-Data<-read.table(file="C:/###/###/SPMMSData_AKExample.csv",header=TRUE,sep=",")
+Data<-read.table(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/SPMMSData_AKExample.csv",header=TRUE,sep=",")
 migprob<-(Data$AK2011to2015[1:90])
 
 ##RUN THE FITTING CODE (PARAMETERS BOUNDS AND INFO ARE IN THE CODE)
-source(file="C:/###/###/InputParametersOrParameterRanges.txt")
-source(file="C:/###/###/Fitting.txt")
+source(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/InputParametersOrParameterRanges.txt")
+source(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/Fitting.txt")
 
 ##PLOT ACCUMULATED FIT
 plot(step1,xlab="Age",ylab="Migration Rate (proportional)",ylim=c(-.005,.025),pch=1)
@@ -267,4 +267,4 @@ squaredsumoffullmodelresiduals
 
 ##WRITE THE DATA
 #write.table(###, file="C:/###/###.csv", sep=",")
-dev.copy2pdf(file="C:/###/###/2011to2015.pdf") 
+#dev.copy2pdf(file="C:/###/###/2011to2015.pdf") 
