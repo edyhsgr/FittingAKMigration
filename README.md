@@ -12,7 +12,8 @@ ReadRunWriteByYear.txt just needs its directory paths updated. It relies on:
 InputParametersOrParameterRanges.txt
 
 (3) the R code for fitting - Fitting.txt
-"CombinedPlots.pdf" is output plots from ReadRunWriteByYear.txt, all combined
+
+CombinedPlots.pdf is output plots from ReadRunWriteByYear.txt, all combined
 
 -----
 
