@@ -25,7 +25,7 @@ REFERENCES:
 AVAILABLE ONLINE: https://www.demographic-research.org/Volumes/Vol23/8/default.htm 
 RELATED EXCEL WORKBOOK BY TOM WILSON: http://www.demog.berkeley.edu/~eddieh/toolbox.html#SPMMS
 
--GREAT RESOURCE ON THE ROGERS-CASTRO MODEL: Rogers A & Castro LJ (1981). Model Migration Schedules. IIASA Research Report. IIASA, Laxenburg, Austria: RR-81-030 
+-ON THE ROGERS-CASTRO MODEL: Rogers A & Castro LJ (1981). Model Migration Schedules. IIASA Research Report. IIASA, Laxenburg, Austria: RR-81-030 
 AVAILABLE ONLINE: http://pure.iiasa.ac.at/id/eprint/1543/
 
 -----
