@@ -17,6 +17,7 @@
 ##INPUTS
 ##############################
 
+##########
 ##SIZES
 #SIZE OF migprob (DATA BY AGE) USED
 SIZE<-90
@@ -26,14 +27,23 @@ ITER<-1000
 BEST<-.01
 #CONVERGENCE INDEX
 FITTO<-1e-10
+##########
 
+
+##########
 ##STEP 1 INPUTS
 #PROPORTIONALLY ADJUST DATA TO SUM TO 1 - NO PARAMETERS
+##########
 
+
+##########
 ##STEP 2 INPUTS
 #NUMBER OF SMALLEST VALUES TO USE AVERAGE OF AS LEVEL TERM
 level<-5
+##########
 
+
+##########
 ##STEP 3 INPUTS
 #MIN AND MAX OF CHILDHOOD AGES TO FIT OVER
 childmin<-0
@@ -44,7 +54,10 @@ childparam1tries<-array(runif(ITER,0,.1))
 
 #RATE OF DESCENT OF THE CHILDHOOD CURVE
 childparam2tries<-array(runif(ITER,0,1))
+##########
 
+
+##########
 ##STEP 4 INPUTS
 #MIN AND MAX OF LABOR FORCE AGES TO FIT OVER
 labormin<-17
@@ -64,7 +77,10 @@ labparam3tries<-array(runif(ITER,18,23))
 
 #RATE OF ASCENT OF THE LABOR FORCE CURVE
 labparam4tries<-array(runif(ITER,.1,.5))
+##########
 
+
+##########
 ##STEP 5 INPUTS
 #MIN AND MAX OF RETIREMENT AGES TO FIT OVER
 retmin<-55
@@ -81,7 +97,10 @@ retparam2tries<-array(runif(ITER,2.5,10)) #retparam2tries<-array(runif(ITER,0,1e
 #POSITION OF THE RETIREMENT CURVE ON THE AGE-AXIS
 #TO APPROXIMATELY EXCLUDE RETIREMENT CURVE FROM MODEL CAN SET LOW AS '55' AND HIGH AS '55+1e-10'
 retparam3tries<-array(runif(ITER,55,65)) #retparam1tries<-array(runif(ITER,55,55+1e-10))
+##########
 
+
+##########
 ##STEP 6 INPUTS
 #MIN AND MAX OF ELDERLY AGES TO FIT OVER
 eldmin<-75
@@ -94,7 +113,10 @@ eldparam1tries<-array(runif(ITER,0,.00005)) #eldparam1tries<-array(runif(ITER,0,
 #RATE OF ASCENT OF THE ELDERLY CURVE
 #TO APPROXIMATELY EXCLUDE ELDERLY CURVE FROM MODEL CAN SET LOW AS '0' AND HIGH AS '1e-10'
 eldparam2tries<-array(runif(ITER,0,.1)) #eldparam2tries<-array(runif(ITER,0,1e-10))
+##########
 
+
+##########
 ##STEP 7 INPUTS
 #MIN AND MAX OF STUDENT AGES TO FIT OVER - STUDENT AGES SET ABOVE UNDER STEP 4 INPUTS
 stumin<-min(studentages)
@@ -115,4 +137,5 @@ stuparam3tries<-array(runif(ITER,17,21)) #stuparam3tries<-array((runif(ITER,0,1e
 #RATE OF ASCENT OF STUDENT CURVE
 #TO APPROXIMATELY EXCLUDE STUDENT CURVE FROM MODEL CAN SET LOW AS '0' AND HIGH AS '1e-10'
 stuparam4tries<-array(runif(ITER,0,3)) #stuparam4tries<-array((runif(ITER,0,1e-10))) 
+##########
 
