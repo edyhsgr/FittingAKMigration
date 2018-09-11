@@ -21,7 +21,7 @@ REFERENCES:
 
 -ORIGINAL CODE WITH NOTES IS AT http://www.demog.berkeley.edu/~eddieh/toolbox.html#SPMMSRCode
 
--FOR MORE INFO ON THE MODEL MIGRATION SCHEDULE WITH STUDENT PEAK, SEE: Wilson, T. (2010). "Model migration schedules incorporating student migration peaks." Demographic Research, 23(8): 191–222. 
+-FOR INFO ON THE MODEL MIGRATION SCHEDULE WITH STUDENT PEAK, SEE: Wilson, T. (2010). "Model migration schedules incorporating student migration peaks." Demographic Research, 23(8): 191–222. 
 AVAILABLE ONLINE: https://www.demographic-research.org/Volumes/Vol23/8/default.htm 
 RELATED EXCEL WORKBOOK BY TOM WILSON: http://www.demog.berkeley.edu/~eddieh/toolbox.html#SPMMS
 
