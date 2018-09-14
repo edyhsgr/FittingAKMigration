@@ -27,7 +27,8 @@ REFERENCES:
 -INFO ON THE MODEL MIGRATION SCHEDULE WITH STUDENT PEAK, SEE: Wilson, T. (2010). 
 "Model migration schedules incorporating student migration peaks." Demographic Research, 23(8): 191–222. 
 AVAILABLE ONLINE: https://www.demographic-research.org/Volumes/Vol23/8/default.htm 
-RELATED EXCEL WORKBOOK BY TOM WILSON (PROVIDED TERRIFIC INSTRUCTION): http://www.demog.berkeley.edu/~eddieh/toolbox.html#SPMMS
+RELATED EXCEL WORKBOOK BY TOM WILSON (PROVIDED TERRIFIC INSTRUCTION): 
+http://www.demog.berkeley.edu/~eddieh/toolbox.html#SPMMS
 
 -ON THE ROGERS-CASTRO MODEL: Rogers A & Castro LJ (1981). Model Migration Schedules. 
 IIASA Research Report. IIASA, Laxenburg, Austria: RR-81-030 
