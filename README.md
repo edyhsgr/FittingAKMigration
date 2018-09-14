@@ -36,9 +36,10 @@ AVAILABLE ONLINE: http://pure.iiasa.ac.at/id/eprint/1543/
 
 -----
 SOME NOTES: I just used very broad possible parameter bounds to fit all to, and included all parameters 
-(no matter overfitting etc), but ~fun to see/think about. All parameters/ranges I used are as given in InputParametersOrParameterRanges.txt. It's very slow, and I'm thinking it could probably use some apply()'s 
-and cleanup, and warning messages (esp for when bounds are not wide enough), plus review for problems/errors, 
-but ~neat/fun in any case. 
+(no matter overfitting etc), but ~fun to see/think about. 
+All parameters/ranges I used are as given in InputParametersOrParameterRanges.txt. 
+It's very slow, and I'm thinking it could probably use some apply()'s and cleanup, and warning messages 
+(esp for when bounds are not wide enough), plus review for problems/errors, but ~neat/fun in any case. 
 -Eddie Hunsinger, September 2018
 
 -----
