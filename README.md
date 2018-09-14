@@ -1,3 +1,4 @@
+<pre>
 EDDIE'S R CODE FOR FITTING THE ROGERS-CASTRO MODEL MIGRATION SCHEDULE WITH WILSON'S STUDENT PEAK, APPLIED TO ALASKA 2011 TO 2015 OUT-MIGRATION (ANNUAL AND AVERAGE ANNUAL FOR THE PERIOD)
 
 -----
@@ -37,3 +38,4 @@ SOME NOTES: I just used very broad possible parameter bounds to fit all to, and 
 -----
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+</pre>
