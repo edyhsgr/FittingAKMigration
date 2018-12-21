@@ -40,6 +40,7 @@ SOME NOTES: I just used very broad possible parameter bounds to fit all to, and 
 All parameters/ranges I used are as given in InputParametersOrParameterRanges.R. 
 It's very slow, and I'm thinking it could probably use some apply()'s and cleanup, and warning messages 
 (esp for when bounds are not wide enough), plus review for problems/errors, but ~neat/fun in any case. 
+Copies of the code with some application of and comparison to R's nls() and lm() functions, and to more ~plain Monte Carlo, are available here: https://github.com/AppliedDemogToolbox/Hunsinger_SPMMSRCode/tree/master/FittingComparisons. 
 -Eddie Hunsinger, September 2018 (updated December 2018)
 
 -----
