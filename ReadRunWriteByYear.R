@@ -21,7 +21,7 @@ Data<-read.table(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigrat
 migprob<-(Data$AK2011[1:90])
 
 ##RUN THE FITTING CODE (PARAMETERS BOUNDS AND INFO ARE IN THE CODE)
-source(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/InputParametersOrParameterRanges.txt")
+source(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/InputParametersOrParameterRanges.R")
 source(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/Fitting.txt")
 
 ##PLOT ACCUMULATED FIT
@@ -64,7 +64,7 @@ Data<-read.table(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigrat
 migprob<-(Data$AK2012[1:90])
 
 ##RUN THE FITTING CODE (PARAMETERS BOUNDS AND INFO ARE IN THE CODE)
-source(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/InputParametersOrParameterRanges.txt")
+source(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/InputParametersOrParameterRanges.R")
 source(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/Fitting.txt")
 
 ##PLOT ACCUMULATED FIT
@@ -107,7 +107,7 @@ Data<-read.table(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigrat
 migprob<-(Data$AK2013[1:90])
 
 ##RUN THE FITTING CODE (PARAMETERS BOUNDS AND INFO ARE IN THE CODE)
-source(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/InputParametersOrParameterRanges.txt")
+source(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/InputParametersOrParameterRanges.R")
 source(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/Fitting.txt")
 
 ##PLOT ACCUMULATED FIT
@@ -150,7 +150,7 @@ Data<-read.table(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigrat
 migprob<-(Data$AK2014[1:90])
 
 ##RUN THE FITTING CODE (PARAMETERS BOUNDS AND INFO ARE IN THE CODE)
-source(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/InputParametersOrParameterRanges.txt")
+source(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/InputParametersOrParameterRanges.R")
 source(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/Fitting.txt")
 
 ##PLOT ACCUMULATED FIT
@@ -193,7 +193,7 @@ Data<-read.table(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigrat
 migprob<-(Data$AK2015[1:90])
 
 ##RUN THE FITTING CODE (PARAMETERS BOUNDS AND INFO ARE IN THE CODE)
-source(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/InputParametersOrParameterRanges.txt")
+source(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/InputParametersOrParameterRanges.R")
 source(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/Fitting.txt")
 
 ##PLOT ACCUMULATED FIT
@@ -236,7 +236,7 @@ Data<-read.table(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigrat
 migprob<-(Data$AK2011to2015[1:90])
 
 ##RUN THE FITTING CODE (PARAMETERS BOUNDS AND INFO ARE IN THE CODE)
-source(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/InputParametersOrParameterRanges.txt")
+source(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/InputParametersOrParameterRanges.R")
 source(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/Fitting.txt")
 
 ##PLOT ACCUMULATED FIT
