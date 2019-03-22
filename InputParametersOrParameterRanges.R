@@ -22,9 +22,9 @@
 #SIZE OF migprob (DATA BY AGE) USED
 SIZE<-90
 #NUMBER OF ITERATIONS - USED FOR FITTING - CAN LOWER (EG USE 100 (and then would take, say, .1 BEST) TO SPEED THINGS UP BUT THAT SEEMS TO MAKE IT MUCH LESS STABLE/RELIABLE
-ITER<-1000
+TRIES<-1000
 #PROPORTION TO REPEAT DISTRIBUTION BOUND SELECTION WITH
-BEST<-.01
+BEST<-.015
 #CONVERGENCE INDEX
 FITTO<-1e-10
 ##########
@@ -50,10 +50,10 @@ childmin<-0
 childmax<-16
 
 #HEIGHT OF THE CHILDHOOD CURVE
-childparam1tries<-array(runif(ITER,0,.1))
+childparam1tries<-array(runif(TRIES,0,.1))
 
 #RATE OF DESCENT OF THE CHILDHOOD CURVE
-childparam2tries<-array(runif(ITER,0,1))
+childparam2tries<-array(runif(TRIES,0,1))
 ##########
 
 
@@ -67,16 +67,16 @@ labormax<-50
 studentages<-c(19,20) #studentages<-c(0) 
 
 #HEIGHT OF THE LABOR FORCE CURVE
-labparam1tries<-array(runif(ITER,.001,.08))
+labparam1tries<-array(runif(TRIES,.001,.08))
 
 #RATE OF DESCENT OF THE LABOR FORCE CURVE
-labparam2tries<-array(runif(ITER,.02,.10))
+labparam2tries<-array(runif(TRIES,.02,.10))
 
 #POSITION OF THE LABOR FORCE CURVE ON THE AGE-AXIS
-labparam3tries<-array(runif(ITER,18,23))
+labparam3tries<-array(runif(TRIES,18,23))
 
 #RATE OF ASCENT OF THE LABOR FORCE CURVE
-labparam4tries<-array(runif(ITER,.1,.5))
+labparam4tries<-array(runif(TRIES,.1,.5))
 ##########
 
 
@@ -88,15 +88,15 @@ retmax<-75
 
 #HEIGHT OF RETIREMENT CURVE
 #TO APPROXIMATELY EXCLUDE RETIREMENT CURVE FROM MODEL CAN SET LOW AS '0' AND HIGH AS '1e-10'
-retparam1tries<-array(runif(ITER,.0,.01)) #retparam1tries<-array(runif(ITER,0,1e-10))
+retparam1tries<-array(runif(TRIES,.0,.01)) #retparam1tries<-array(runif(ITER,0,1e-10))
 
 #RATE OF DESCENT OF RETIREMENT CURVE
 #TO APPROXIMATELY EXCLUDE RETIREMENT CURVE FROM MODEL CAN SET LOW AS '0' AND HIGH AS '1e-10'
-retparam2tries<-array(runif(ITER,2.5,10)) #retparam2tries<-array(runif(ITER,0,1e-10))
+retparam2tries<-array(runif(TRIES,2.5,10)) #retparam2tries<-array(runif(ITER,0,1e-10))
 
 #POSITION OF THE RETIREMENT CURVE ON THE AGE-AXIS
 #TO APPROXIMATELY EXCLUDE RETIREMENT CURVE FROM MODEL CAN SET LOW AS '55' AND HIGH AS '55+1e-10'
-retparam3tries<-array(runif(ITER,55,65)) #retparam1tries<-array(runif(ITER,55,55+1e-10))
+retparam3tries<-array(runif(TRIES,55,65)) #retparam1tries<-array(runif(ITER,55,55+1e-10))
 ##########
 
 
@@ -108,11 +108,11 @@ eldmax<-90
 
 #HEIGHT OF THE ELDERLY CURVE
 #TO APPROXIMATELY EXCLUDE ELDERLY CURVE FROM MODEL CAN SET LOW AS '0' AND HIGH AS '1e-10'
-eldparam1tries<-array(runif(ITER,0,.00005)) #eldparam1tries<-array(runif(ITER,0,1e-10))
+eldparam1tries<-array(runif(TRIES,0,.00005)) #eldparam1tries<-array(runif(ITER,0,1e-10))
 
 #RATE OF ASCENT OF THE ELDERLY CURVE
 #TO APPROXIMATELY EXCLUDE ELDERLY CURVE FROM MODEL CAN SET LOW AS '0' AND HIGH AS '1e-10'
-eldparam2tries<-array(runif(ITER,0,.1)) #eldparam2tries<-array(runif(ITER,0,1e-10))
+eldparam2tries<-array(runif(TRIES,0,.1)) #eldparam2tries<-array(runif(ITER,0,1e-10))
 ##########
 
 
@@ -124,18 +124,18 @@ stumax<-max(studentages+1)
 
 #HEIGHT OF STUDENT CURVE
 #TO APPROXIMATELY EXCLUDE STUDENT CURVE FROM MODEL CAN SET LOW AS '0' AND HIGH AS '1e-10'
-stuparam1tries<-array(runif(ITER,.00001,.1)) #stuparam1tries<-array((runif(ITER,0,1e-10))) 
+stuparam1tries<-array(runif(TRIES,.00001,.1)) #stuparam1tries<-array((runif(ITER,0,1e-10))) 
 
 #RATE OF DESCENT OF STUDENT CURVE
 #TO APPROXIMATELY EXCLUDE STUDENT CURVE FROM MODEL CAN SET LOW AS '0' AND HIGH AS '1e-10'
-stuparam2tries<-array(runif(ITER,0,5)) #stuparam2tries<-array((runif(ITER,0,1e-10))) 
+stuparam2tries<-array(runif(TRIES,0,5)) #stuparam2tries<-array((runif(ITER,0,1e-10))) 
 
 #POSITION OF THE STUDENT CURVE ON THE AGE-AXIS
 #TO APPROXIMATELY EXCLUDE STUDENT CURVE FROM MODEL CAN SET LOW AS '0' AND HIGH AS '1e-10'
-stuparam3tries<-array(runif(ITER,17,21)) #stuparam3tries<-array((runif(ITER,0,1e-10))) 
+stuparam3tries<-array(runif(TRIES,17,21)) #stuparam3tries<-array((runif(ITER,0,1e-10))) 
 
 #RATE OF ASCENT OF STUDENT CURVE
 #TO APPROXIMATELY EXCLUDE STUDENT CURVE FROM MODEL CAN SET LOW AS '0' AND HIGH AS '1e-10'
-stuparam4tries<-array(runif(ITER,0,3)) #stuparam4tries<-array((runif(ITER,0,1e-10))) 
+stuparam4tries<-array(runif(TRIES,0,3)) #stuparam4tries<-array((runif(ITER,0,1e-10))) 
 ##########
 
