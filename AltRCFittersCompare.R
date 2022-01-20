@@ -50,7 +50,7 @@ rc_res2 <- mig_estimate_rc(
 
 ####################
 ####################
-##MMSRCode example
+##MMSRCode example (Eddie's "homespun")
 ####################
 ##Student peak function excluded, but all other initial settings unchanged
 ##Main current location for the code and info: https://github.com/AppliedDemogToolbox/Hunsinger_MMSRCode
@@ -233,22 +233,20 @@ title("Points are Alaska out-migration by age, 2011 to 2015 average annual",cex.
 ####################
 ####################
 ##Summarize errors
-medrcbayes1_squaredsumofresiduals<-sum((rc_res1[["fit_df"]]$median-mx)^2)
-homespun1_squaredsumofresiduals<-sum((MMSR1*sum(migprob)-mx)^2)
-migraR1_squaredsumofresiduals<-sum((migraR1-mx)^2)
-medrcbayes2_squaredsumofresiduals<-sum((rc_res2[["fit_df"]]$median-mx)^2)
-homespun2_squaredsumofresiduals<-sum((MMSR2*sum(migprob)-mx)^2)
-migraR2_squaredsumofresiduals<-sum((migraR2-mx)^2)
+medrcbayes1_sumofsquaredsumofresiduals<-sum((rc_res1[["fit_df"]]$median-mx)^2)
+homespun1_sumofsquaredresiduals<-sum((MMSR1*sum(migprob)-mx)^2)
+migraR1_sumofsquaredresiduals<-sum((migraR1-mx)^2)
+medrcbayes2_sumofsquaredresiduals<-sum((rc_res2[["fit_df"]]$median-mx)^2)
+homespun2_sumofsquaredresiduals<-sum((MMSR2*sum(migprob)-mx)^2)
+migraR2_sumofsquaredresiduals<-sum((migraR2-mx)^2)
 
-medrcbayes1_squaredsumofresiduals
-medrcbayes2_squaredsumofresiduals
-MMSR1_squaredsumofresiduals
-MMSR2_squaredsumofresiduals
-migraR1_squaredsumofresiduals
-migraR2_squaredsumofresiduals
+medrcbayes1_sumofsquaredresiduals
+medrcbayes2_sumofsquaredresiduals
+homespun1_sumofsquaredresiduals
+homespun2_sumofsquaredresiduals
+migraR1_sumofsquaredresiduals
+migraR2_sumofsquaredresiduals
 ####################
 ####################
-
-
 
 
