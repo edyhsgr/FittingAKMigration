@@ -233,7 +233,7 @@ title("Points are Alaska out-migration by age, 2011 to 2015 average annual",cex.
 ####################
 ####################
 ##Summarize errors
-medrcbayes1_sumofsquaredsumofresiduals<-sum((rc_res1[["fit_df"]]$median-mx)^2)
+medrcbayes1_sumofsquaredresiduals<-sum((rc_res1[["fit_df"]]$median-mx)^2)
 homespun1_sumofsquaredresiduals<-sum((MMSR1*sum(migprob)-mx)^2)
 migraR1_sumofsquaredresiduals<-sum((migraR1-mx)^2)
 medrcbayes2_sumofsquaredresiduals<-sum((rc_res2[["fit_df"]]$median-mx)^2)
