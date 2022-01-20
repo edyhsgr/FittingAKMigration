@@ -43,7 +43,8 @@ It's very slow, and I'm thinking it could probably use some apply()'s and cleanu
 Copies of the code with some application of and comparison to R's nls() and lm() functions, 
 and to more ~plain Monte Carlo, are available here:
 https://github.com/AppliedDemogToolbox/Hunsinger_SPMMSRCode/tree/master/FittingComparisons. 
--Eddie Hunsinger, September 2018 (updated December 2018)
+In January 2022 I also added some comparison of results from other fitters (migraR and rcbayes) for the 2011to2015 average annual data. 
+-Eddie Hunsinger, September 2018 (updated January 2022)
 
 -----
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/igo/">Creative Commons Attribution-ShareAlike 3.0 International License</a>.
