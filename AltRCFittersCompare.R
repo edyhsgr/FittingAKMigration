@@ -219,10 +219,10 @@ lines(migraR1,col=6)
 lines(migraR2,col=7)
 legend(42,.12, 
 	legend=c("data", "rcbayes median 1", "rcbayes median 2", 
-	"homespun 1", "homespun 2", 
 	"rcbayes upper and lower 1 and 2",
+	"homespun 1", "homespun 2", 
 	"migraR 1", "migraR 2"),
-	col=c("black", 1, 2, 3, 5, "grey", 6, 7), 
+	col=c("black", 1, 2, "grey", 3, 5, 6, 7), 
 	lty=c(NA,1,1,1,1,1,1,1),pch=c(1,NA,NA,NA,NA,NA,NA,NA),cex=.9)
 title("Points are Alaska out-migration by age, 2011 to 2015 average annual",cex.main=.9)
 ####################
