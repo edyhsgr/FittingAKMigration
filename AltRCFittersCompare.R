@@ -20,6 +20,11 @@ colnames(data1) <- c("x","y")
 
 ##For plot label
 YEAR<-"2011 to 2015 average annual"
+
+##A NOTE: I cranked up the TRIES variable (from default 1000 to 10000) for MMSRCode and maxite for migraR (from 200 to 2000) below - this requires 
+##	more time (3 to 5 minutes per single complete fit on my computer) but gives more precise results for the case (more comparable to rcbayes 
+##	on time and precision)
+
 ####################
 ####################
 
