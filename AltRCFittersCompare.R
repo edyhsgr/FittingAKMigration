@@ -86,6 +86,8 @@ set.seed(123)
 ##Using MMSRCode (aka SPMMS R code, which includes student-peak) with young-age, 
 ##working-age, retirement-age, and post-retirement-age functions included - student-peak excluded
 source(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/AltRCFittersCompare_MMSRCodeInputParametersOrParameterRanges.R")
+#Eddie modifying TRIES input, from 1000 to 10000
+TRIES<-10000
 
 source(file="https://raw.githubusercontent.com/edyhsgr/fittingAKmigration/master/Fitting.R")
 MMSR1<-step7
@@ -133,38 +135,38 @@ library(migraR)
 library(dplyr)
 library(tidyverse)
 
-# Fitting and Plotting data
-#fitted.val.7  <- best_migramod(dataIn = data1, maxite = 200, profile = "seven")
-#fitted.val.9  <- best_migramod(dataIn = data1, maxite = 200, profile = "nine")
-#fitted.val.11 <- best_migramod(dataIn = data1, maxite = 200, profile = "eleven")
-fitted.val.13 <- best_migramod(dataIn = data1, maxite = 200, profile = "thirteen")
+# Fitting and Plotting data 	#Eddie modified: set maxite to 2000 (default is (faster) 200) 
+#fitted.val.7  <- best_migramod(dataIn = data1, maxite = 2000, profile = "seven")
+#fitted.val.9  <- best_migramod(dataIn = data1, maxite = 2000, profile = "nine")
+#fitted.val.11 <- best_migramod(dataIn = data1, maxite = 2000, profile = "eleven")
+fitted.val.13 <- best_migramod(dataIn = data1, maxite = 2000, profile = "thirteen")
 migraR1<-fitted.val.13$modelClass$value(fitted.val.13$bestParam,data1)
 
-fitted.val.13 <- best_migramod(dataIn = data1, maxite = 200, profile = "thirteen")
+fitted.val.13 <- best_migramod(dataIn = data1, maxite = 2000, profile = "thirteen")
 migraR2<-fitted.val.13$modelClass$value(fitted.val.13$bestParam,data1)
 
-fitted.val.13 <- best_migramod(dataIn = data1, maxite = 200, profile = "thirteen")
+fitted.val.13 <- best_migramod(dataIn = data1, maxite = 2000, profile = "thirteen")
 migraR3<-fitted.val.13$modelClass$value(fitted.val.13$bestParam,data1)
 
-fitted.val.13 <- best_migramod(dataIn = data1, maxite = 200, profile = "thirteen")
+fitted.val.13 <- best_migramod(dataIn = data1, maxite = 2000, profile = "thirteen")
 migraR4<-fitted.val.13$modelClass$value(fitted.val.13$bestParam,data1)
 
-fitted.val.13 <- best_migramod(dataIn = data1, maxite = 200, profile = "thirteen")
+fitted.val.13 <- best_migramod(dataIn = data1, maxite = 2000, profile = "thirteen")
 migraR5<-fitted.val.13$modelClass$value(fitted.val.13$bestParam,data1)
 
-fitted.val.13 <- best_migramod(dataIn = data1, maxite = 200, profile = "thirteen")
+fitted.val.13 <- best_migramod(dataIn = data1, maxite = 2000, profile = "thirteen")
 migraR6<-fitted.val.13$modelClass$value(fitted.val.13$bestParam,data1)
 
-fitted.val.13 <- best_migramod(dataIn = data1, maxite = 200, profile = "thirteen")
+fitted.val.13 <- best_migramod(dataIn = data1, maxite = 2000, profile = "thirteen")
 migraR7<-fitted.val.13$modelClass$value(fitted.val.13$bestParam,data1)
 
-fitted.val.13 <- best_migramod(dataIn = data1, maxite = 200, profile = "thirteen")
+fitted.val.13 <- best_migramod(dataIn = data1, maxite = 2000, profile = "thirteen")
 migraR8<-fitted.val.13$modelClass$value(fitted.val.13$bestParam,data1)
 
-fitted.val.13 <- best_migramod(dataIn = data1, maxite = 200, profile = "thirteen")
+fitted.val.13 <- best_migramod(dataIn = data1, maxite = 2000, profile = "thirteen")
 migraR9<-fitted.val.13$modelClass$value(fitted.val.13$bestParam,data1)
 
-fitted.val.13 <- best_migramod(dataIn = data1, maxite = 200, profile = "thirteen")
+fitted.val.13 <- best_migramod(dataIn = data1, maxite = 2000, profile = "thirteen")
 migraR10<-fitted.val.13$modelClass$value(fitted.val.13$bestParam,data1)
 ####################
 ####################
@@ -174,6 +176,7 @@ migraR10<-fitted.val.13$modelClass$value(fitted.val.13$bestParam,data1)
 ####################
 ####################
 ##Plot the results and data
+####################
 plot(migprob,ylab = "migration rate", xlab = "age", ylim=c(.02,.12))
 lines(rc_res1[["fit_df"]]$median, col = 2)
 lines(rc_res2[["fit_df"]]$median, col = 2)
@@ -246,6 +249,7 @@ title(paste(c("Points are Alaska out-migration by age, ",YEAR),collapse=""),cex.
 ####################
 ####################
 ##Summarize errors
+####################
 medrcbayes_sumofsquaredresiduals<-c(
 	medrcbayes1_sumofsquaredresiduals<-sum((rc_res1[["fit_df"]]$median-mx)^2),
 	medrcbayes2_sumofsquaredresiduals<-sum((rc_res2[["fit_df"]]$median-mx)^2),
@@ -284,6 +288,11 @@ migraR_sumofsquaredresiduals<-c(
 	migraR9_sumofsquaredresiduals<-sum((migraR8-mx)^2),
 	migraR10_sumofsquaredresiduals<-sum((migraR10-mx)^2)
 	)
+
+medrcbayes_sumofsquaredresiduals
+homespun_sumofsquaredresiduals
+migraR_sumofsquaredresiduals
 ####################
 ####################
+
 
