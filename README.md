@@ -22,7 +22,7 @@ CombinedPlots.pdf and CombinedPlots.gif is output plots from ReadRunWriteByYear.
 
 -----
 REFERENCES:
--ORIGINAL CODE WITH NOTES IS AT https://applieddemogtoolbox.github.io/Toolbox/#SPMMSRCode 
+-ORIGINAL CODE WITH NOTES IS AT https://applieddemogtoolbox.github.io/Toolbox/#MMSRCode 
 
 -INFO ON THE MODEL MIGRATION SCHEDULE WITH STUDENT PEAK, SEE: Wilson, T. (2010). 
 "Model migration schedules incorporating student migration peaks." Demographic Research, 23(8): 191–222. 
